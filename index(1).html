@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>اختراق مرعب</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: red;
+      font-family: monospace;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      animation: flash 0.15s infinite;
+    }
+    @keyframes flash {
+      0% { background: black; color: red; }
+      50% { background: red; color: black; }
+      100% { background: black; color: red; }
+    }
+    .skull {
+      font-size: 120px;
+      margin-bottom: 20px;
+    }
+    .message {
+      font-size: 40px;
+      text-shadow: 0 0 10px red;
+    }
+  </style>
+</head>
+<body>
+  <div class="skull">☠</div>
+  <div class="message">لقد تم اختراقك<br>جميع بياناتك تحت سيطرتي</div>
+  <audio autoplay loop>
+    <source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" type="audio/ogg">
+  </audio>
+</body>
+</html>
